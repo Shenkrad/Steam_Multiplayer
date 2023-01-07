@@ -1,0 +1,1 @@
+You need to add a folder named sdk inside "Encrypted" folder with the SteamWorks SDK

@@ -1,0 +1,707 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "PuzzlePlatforms Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Debug",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Debug",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Debug",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Development",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Development",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Development",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Test",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Test",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Test",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Shipping",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Shipping",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"Win64",
+				"Shipping",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Debug",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Debug",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms HoloLens Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Debug",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"DebugGame",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"DebugGame",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms HoloLens DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"DebugGame",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Development",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Development",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms HoloLens Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Development",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Test",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Test",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms HoloLens Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Test",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Shipping",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Shipping",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatforms HoloLens Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatforms HoloLens Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatforms",
+				"HoloLens",
+				"Shipping",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Debug",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Debug",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatformsEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Debug",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatformsEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"DebugGame",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Development",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Development",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"PuzzlePlatformsEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		},
+		{
+			"label": "PuzzlePlatformsEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"PuzzlePlatformsEditor",
+				"Win64",
+				"Development",
+				"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\PuzzlePlatforms.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "D:\\Program files HDD\\UE_5.0"
+			}
+		}
+	]
+}
