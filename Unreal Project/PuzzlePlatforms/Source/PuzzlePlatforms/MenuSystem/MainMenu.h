@@ -12,6 +12,7 @@ class UButton;
 class UWidget;
 class UWidgetSwitcher;
 class UEditableTextBox;
+class UServerRow;
 /**
  * 
  */
@@ -19,6 +20,11 @@ UCLASS()
 class PUZZLEPLATFORMS_API UMainMenu : public UMenuWidget
 {
 	GENERATED_BODY()
+
+public:
+	UMainMenu(const FObjectInitializer & ObjectInitializer);
+
+	void SetServerList(TArray<FString> ServerNames);
 
 protected:
 	virtual bool Initialize() override;
@@ -42,7 +48,9 @@ private:
 	UButton* ExitButton;
 
 	UPROPERTY(meta = (BindWidget))
-	UEditableTextBox* IPAddressField;
+	UPanelWidget* ServerList;
+
+	TSubclassOf<UServerRow> ServerRowClass;
 
 	UPROPERTY(meta = (BindWidget))
 	UWidgetSwitcher* MenuSwitcher;

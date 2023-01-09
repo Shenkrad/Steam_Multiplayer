@@ -40,6 +40,16 @@
 		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
 	},
 	{
+		"file": "D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\Source\\PuzzlePlatforms\\MenuSystem\\ServerRow.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.211.rsp\"",
+		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\Source\\PuzzlePlatforms\\MenuSystem\\ServerRow.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.211.rsp\"",
+		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
+	},
+	{
 		"file": "D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\Source\\PuzzlePlatforms\\MovingPlatform.cpp",
 		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\cl.exe\" @\"D:\\Unreal Projects\\Multiplayer\\Steam_Multiplayer\\Unreal Project\\PuzzlePlatforms\\.vscode\\compileCommands_PuzzlePlatforms\\PuzzlePlatforms.211.rsp\"",
 		"directory": "D:\\Program files HDD\\UE_5.0\\Engine\\Source"
