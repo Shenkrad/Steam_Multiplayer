@@ -104,7 +104,8 @@ void UPuzzlePlatformsGameInstance::RefreshServerList()
 
     if (SessionSearch.IsValid())
     {
-        SessionSearch->bIsLanQuery = true;
+        SessionSearch->QuerySettings.Set(SEARCH_PRESENCE, true, EOnlineComparisonOp::Equals);
+        // SessionSearch->bIsLanQuery = true;
         UE_LOG(LogTemp, Warning, TEXT("Starting finding game sessions"));
         SessionInterface->FindSessions(0, SessionSearch.ToSharedRef());                
     }
@@ -197,9 +198,11 @@ void UPuzzlePlatformsGameInstance::CreateSession()
     if (SessionInterface.IsValid())
     {
         FOnlineSessionSettings SessionSettings;
-        SessionSettings.bIsLANMatch = true;
+        SessionSettings.bIsLANMatch = false;
         SessionSettings.NumPublicConnections = 2;
         SessionSettings.bShouldAdvertise = true;
+        SessionSettings.bUsesPresence = true;
+        SessionSettings.bUseLobbiesIfAvailable = true;
 
         SessionInterface->CreateSession(0, SESSION_NAME, SessionSettings);
     }
