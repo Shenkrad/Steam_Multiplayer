@@ -106,6 +106,7 @@ void UPuzzlePlatformsGameInstance::RefreshServerList()
     {
         SessionSearch->QuerySettings.Set(SEARCH_PRESENCE, true, EOnlineComparisonOp::Equals);
         SessionSearch->MaxSearchResults = 100;
+        SessionSearch->QuerySettings.Set(SEARCH_KEYWORDS, FString("PuzzlePlatformsShenkrad"), EOnlineComparisonOp::In);
         // SessionSearch->bIsLanQuery = true;
         UE_LOG(LogTemp, Warning, TEXT("Starting finding game sessions"));
         SessionInterface->FindSessions(0, SessionSearch.ToSharedRef());                
@@ -204,6 +205,7 @@ void UPuzzlePlatformsGameInstance::CreateSession()
         SessionSettings.bShouldAdvertise = true;
         SessionSettings.bUsesPresence = true;
         SessionSettings.bUseLobbiesIfAvailable = true;
+        SessionSettings.Set(SEARCH_KEYWORDS, FString("PuzzlePlatformsShenkrad"), EOnlineDataAdvertisementType::ViaOnlineServiceAndPing);
 
         SessionInterface->CreateSession(0, SESSION_NAME, SessionSettings);
     }
