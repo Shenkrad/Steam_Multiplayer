@@ -22,7 +22,19 @@ public:
 	UPROPERTY(meta = (BindWidget))
 	UTextBlock* ServerName;
 
+	UPROPERTY(meta = (BindWidget))
+	UTextBlock* HostUsername;
+
+	UPROPERTY(meta = (BindWidget))
+	UTextBlock* PlayerInfo;
+
+	UPROPERTY(BlueprintReadOnly)
+	bool Selected = false;
+
 	void Setup(UMainMenu* Parent, uint32 Index);
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void OnSelectedChanged();
 
 private:
 

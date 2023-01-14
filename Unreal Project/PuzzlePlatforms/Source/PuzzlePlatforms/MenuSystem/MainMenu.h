@@ -13,6 +13,18 @@ class UWidget;
 class UWidgetSwitcher;
 class UEditableTextBox;
 class UServerRow;
+
+USTRUCT()
+struct FServerData 
+{
+	GENERATED_BODY()
+
+	FString Name;
+	uint16 CurrentPlayers;
+	uint16 MaxPlayers;
+	FString HostUsername;
+};
+
 /**
  * 
  */
@@ -24,7 +36,7 @@ class PUZZLEPLATFORMS_API UMainMenu : public UMenuWidget
 public:
 	UMainMenu(const FObjectInitializer & ObjectInitializer);
 
-	void SetServerList(TArray<FString> ServerNames);
+	void SetServerList(TArray<FServerData> ServerData);
 
 	void SetSelectedIndex(uint32 Index);
 
@@ -80,4 +92,5 @@ private:
 
 	TOptional<uint32> SelectedIndex;
 
+	void UpdateChildren();
 };
