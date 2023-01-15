@@ -54,13 +54,19 @@ bool UMainMenu::Initialize()
     // TODO: setup
 
     if (!ensure(HostButton != nullptr)) return false;
-    HostButton->OnClicked.AddDynamic(this, &UMainMenu::HostServer);
+    HostButton->OnClicked.AddDynamic(this, &UMainMenu::OpenHostMenu);
 
     if (!ensure(JoinButton != nullptr)) return false;
     JoinButton->OnClicked.AddDynamic(this, &UMainMenu::OpenJoinMenu);
 
     if (!ensure(BackButton != nullptr)) return false;
     BackButton->OnClicked.AddDynamic(this, &UMainMenu::OpenMainMenu);
+
+    if (!ensure(BackButton2 != nullptr)) return false;
+    BackButton2->OnClicked.AddDynamic(this, &UMainMenu::OpenMainMenu);
+
+    if (!ensure(ConfirmHostButton != nullptr)) return false;
+    ConfirmHostButton->OnClicked.AddDynamic(this, &UMainMenu::HostServer);
 
     if (!ensure(JoinGameButton != nullptr)) return false;
     JoinGameButton->OnClicked.AddDynamic(this, &UMainMenu::JoinServer);
@@ -91,9 +97,10 @@ void UMainMenu::OnLevelRemovedFromWorld(ULevel* Level, UWorld* World)
 
 void UMainMenu::HostServer()
 {
-    if (MenuInterface != nullptr)
+    if (MenuInterface != nullptr && HostName != nullptr)
     {
-        MenuInterface->Host();
+        FString ServerHostName = HostName->GetText().ToString();
+        MenuInterface->Host(ServerHostName);
     }
 }
 
@@ -127,6 +134,13 @@ void UMainMenu::OpenMainMenu()
     if (!ensure(MenuSwitcher != nullptr)) return;
     if (!ensure(MainMenu != nullptr)) return;
     MenuSwitcher->SetActiveWidget(MainMenu);
+}
+
+void UMainMenu::OpenHostMenu()
+{
+    if (!ensure(MenuSwitcher != nullptr)) return;
+    if (!ensure(HostMenu != nullptr)) return;
+    MenuSwitcher->SetActiveWidget(HostMenu);
 }
 
 void UMainMenu::ExitGame()

@@ -33,7 +33,7 @@ public:
 	void InGameLoadMenu();
 
 	UFUNCTION(exec)
-	void Host() override;
+	void Host(FString ServerName) override;
 
 	UFUNCTION(exec)
 	void Join(const uint32 Index) override;
@@ -54,6 +54,8 @@ private:
 
 	IOnlineSessionPtr SessionInterface;
 	TSharedPtr<FOnlineSessionSearch> SessionSearch;
+
+	FString DesiredServerName;
 
 	void OnCreateSessionComplete(FName SessionName, bool Success);
 	void OnDestroySessionComplete(FName SessionName, bool Success);

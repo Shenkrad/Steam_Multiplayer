@@ -56,10 +56,19 @@ private:
 	UButton* BackButton;
 
 	UPROPERTY(meta = (BindWidget))
+	UButton* BackButton2;
+
+	UPROPERTY(meta = (BindWidget))
 	UButton* JoinGameButton;
 
 	UPROPERTY(meta = (BindWidget))
+	UButton* ConfirmHostButton;
+
+	UPROPERTY(meta = (BindWidget))
 	UButton* ExitButton;
+	
+	UPROPERTY(meta = (BindWidget))
+	UEditableTextBox* HostName;
 
 	UPROPERTY(meta = (BindWidget))
 	UPanelWidget* ServerList;
@@ -75,6 +84,9 @@ private:
 	UPROPERTY(meta = (BindWidget))
 	UWidget* JoinMenu;
 
+	UPROPERTY(meta = (BindWidget))
+	UWidget* HostMenu;
+
 	UFUNCTION()
 	void HostServer();
 
@@ -86,6 +98,9 @@ private:
 
 	UFUNCTION()
 	void OpenMainMenu();
+
+	UFUNCTION()
+	void OpenHostMenu();
 
 	UFUNCTION()
 	void ExitGame();
