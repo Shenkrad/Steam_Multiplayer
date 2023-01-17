@@ -147,6 +147,16 @@
 			"console": "externalTerminal",
 			"stopAtEntry": false,
 			"cwd": "D:\\Program files HDD\\UE_5.0"
+		},
+		{
+			"name": "(Windows) Attach",
+			"type": "cppvsdbg",
+			"request": "attach",
+			"processId": "${command:pickProcess}",
+			"visualizerFile": "D:\\Program files HDD\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\\Build\\++UE5\\Sync": "D:\\Program files HDD\\UE_5.0"
+			}
 		}
 	]
 }
