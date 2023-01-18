@@ -48,6 +48,11 @@ void UPuzzlePlatformsGameInstance::Init()
     {
         UE_LOG(LogTemp, Warning, TEXT("Found no subsystem"));
     }
+
+    if (GEngine != nullptr)
+    {
+        GEngine->OnNetworkFailure().AddUObject(this, &UPuzzlePlatformsGameInstance::OnNetworkFailure);
+    }   
 }
 
 void UPuzzlePlatformsGameInstance::LoadMenu()
@@ -222,6 +227,11 @@ void UPuzzlePlatformsGameInstance::OnJoinSessionComplete(FName SessionName, EOnJ
     if (!ensure(PlayerController != nullptr)) return;
 
     PlayerController->ClientTravel(ConnectString, ETravelType::TRAVEL_Absolute);
+}
+
+void UPuzzlePlatformsGameInstance::OnNetworkFailure(UWorld* World, UNetDriver* NetDriver, ENetworkFailure::Type FailureType, const FString& ErrorString)
+{
+    LoadMainMenu();
 }
 
 void UPuzzlePlatformsGameInstance::CreateSession()
