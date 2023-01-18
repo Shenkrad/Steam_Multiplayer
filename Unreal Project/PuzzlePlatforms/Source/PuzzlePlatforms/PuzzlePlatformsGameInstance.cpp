@@ -101,6 +101,15 @@ void UPuzzlePlatformsGameInstance::Join(const uint32 Index)
 
 }
 
+void UPuzzlePlatformsGameInstance::StartSession()
+{
+    if (SessionInterface.IsValid())
+    {
+        // Mark Session as "In progress" and is not reachable
+        SessionInterface->StartSession(SESSION_NAME);
+    }
+}
+
 void UPuzzlePlatformsGameInstance::RefreshServerList()
 {
     SessionSearch = MakeShareable(new FOnlineSessionSearch());
@@ -230,7 +239,7 @@ void UPuzzlePlatformsGameInstance::CreateSession()
             SessionSettings.bIsLANMatch = false;
         }
 
-        SessionSettings.NumPublicConnections = 2;
+        SessionSettings.NumPublicConnections = 5;
         SessionSettings.bShouldAdvertise = true;
         SessionSettings.bUsesPresence = true;
         SessionSettings.bUseLobbiesIfAvailable = true;

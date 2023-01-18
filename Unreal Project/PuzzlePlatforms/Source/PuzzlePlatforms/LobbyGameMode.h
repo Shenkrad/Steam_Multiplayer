@@ -20,8 +20,16 @@ protected:
 
 	virtual void Logout(AController* Exiting) override;
 
+
 private:
 
-	uint32 PlayerQuantity = 0;
+	uint16 PlayerQuantity = 0;
+	uint16 PlayersToStart = 2;
+
+	FTimerHandle StartTimerHandle;
+	float StartTimerDelay = 10.f;
+
+	UFUNCTION()
+	void StartGame();
 	
 };

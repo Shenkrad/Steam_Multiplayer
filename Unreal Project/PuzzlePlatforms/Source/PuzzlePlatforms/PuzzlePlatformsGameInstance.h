@@ -38,6 +38,8 @@ public:
 	UFUNCTION(exec)
 	void Join(const uint32 Index) override;
 
+	void StartSession();
+
 	void RefreshServerList() override;
 
 	virtual void LoadMainMenu() override;
