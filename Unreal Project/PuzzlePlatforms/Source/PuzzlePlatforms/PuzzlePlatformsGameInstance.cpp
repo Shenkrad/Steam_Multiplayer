@@ -253,6 +253,7 @@ void UPuzzlePlatformsGameInstance::CreateSession()
         SessionSettings.bShouldAdvertise = true;
         SessionSettings.bUsesPresence = true;
         SessionSettings.bUseLobbiesIfAvailable = true;
+        SessionSettings.Set(SEARCH_KEYWORDS, FString("PuzzlePlatformsShenkrad"), EOnlineDataAdvertisementType::ViaOnlineServiceAndPing);
         SessionSettings.Set(SERVER_NAME_SETTINGS_KEY, DesiredServerName, EOnlineDataAdvertisementType::ViaOnlineServiceAndPing);
 
         SessionInterface->CreateSession(0, SESSION_NAME, SessionSettings);
